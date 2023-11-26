@@ -1,0 +1,94 @@
+{
+  "description": "Enter a description for this Unimatrix package",
+  "author": "Cochise Ruhulessin",
+  "author_email": "cochise.ruhulessin@unimatrixone.io",
+  "url": "https://gitlab.com/unimatrixone",
+  "licenses": "Proprietary",
+  "install_requires": [
+    "aiofiles>=0.8.0",
+    "crcmod>=1.7",
+    "cryptography>=36.0.2",
+    "pyasn1>=0.4.8",
+    "pyasn1_modules>=0.2.8",
+    "pydantic>=1.9.0",
+    "httpx>=0.22.0",
+    "unimatrix>=1.11.0"
+  ],
+  "entry_points": {
+    "unimatrix.runtime.init": [
+      "ckms.core = ckms.core.runlevel:init",
+      "ckms.jose = ckms.jose.runlevel:init"
+    ]
+  },
+  "extras_require": {
+    "all": [
+      "authlib",
+      "aiohttp>=3.8.1",
+      "azure-identity>=1.10.0",
+      "azure-keyvault-keys>=4.5.1",
+      "azure-keyvault-secrets>=4.4.0",
+      "boto3>=1.24.10",
+      "jwcrypto",
+      "google-cloud-kms>=2.0.0",
+      "google-cloud-secret-manager==2.10.0",
+      "paramiko>=2.11.0",
+      "pyjwt",
+      "pynacl",
+      "python-jose[cryptography]",
+      "yubihsm[http,usb]>=2.1.0"
+    ],
+    "azure": [
+      "aiohttp>=3.8.1",
+      "azure-identity>=1.10.0",
+      "azure-keyvault-keys>=4.5.1",
+      "azure-keyvault-secrets>=4.4.0"
+    ],
+    "aws": [
+      "boto3>=1.24.10"
+    ],
+    "cli": [
+      "typer>=0.5.0"
+    ],
+    "google": [
+      "google-cloud-kms>=2.0.0",
+      "google-cloud-secret-manager==2.10.0"
+    ],
+    "ssh-agent": [
+      "paramiko>=2.11.0"
+    ],
+    "yubihsm": [
+      "yubihsm[http,usb]>=2.1.0"
+    ],
+    "yubikey": [
+      "yubikey_manager>=4.0.9"
+    ]
+  },
+  "classifiers": [
+     "Development Status :: 4 - Beta",
+     "Environment :: Console",
+     "Environment :: Web Environment",
+     "Framework :: Django",
+     "Framework :: Django CMS",
+     "Framework :: Flask",
+     "Intended Audience :: Developers",
+     "Intended Audience :: Financial and Insurance Industry",
+     "Intended Audience :: Healthcare Industry",
+     "License :: Other/Proprietary License",
+     "Operating System :: POSIX",
+     "Operating System :: POSIX :: Linux",
+     "Programming Language :: Python :: 3.8",
+     "Programming Language :: Python :: 3.9",
+     "Programming Language :: Python :: 3.10",
+     "Programming Language :: Python :: 3 :: Only",
+     "Topic :: Internet",
+     "Topic :: Internet :: WWW/HTTP :: Session",
+     "Topic :: Office/Business",
+     "Topic :: Security",
+     "Topic :: Security :: Cryptography",
+     "Topic :: Software Development :: Libraries",
+     "Topic :: Software Development :: User Interfaces",
+     "Topic :: System :: Systems Administration :: Authentication/Directory",
+     "Topic :: System :: Systems Administration :: Authentication/Directory :: LDAP",
+     "Topic :: System :: Systems Administration :: Authentication/Directory :: NIS"
+  ]
+}

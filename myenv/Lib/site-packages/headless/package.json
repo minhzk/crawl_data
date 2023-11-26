@@ -1,0 +1,46 @@
+{
+  "description": "Headless - API client framework",
+  "author": "Cochise Ruhulessin",
+  "author_email": "cochise.ruhulessin@unimatrixone.io",
+  "url": "https://gitlab.com/unimatrixone/libraries/python-unimatrix/headless",
+  "licenses": "Proprietary",
+  "install_requires": [
+    "canonical>=0.24.1",
+    "ckms",
+    "inflect"
+  ],
+  "extras_require": {
+    "all": [
+      "aiohttp",
+      "fastapi",
+      "httpx",
+      "lxml",
+      "pydantic",
+      "uvicorn"
+    ],
+    "aiohttp": [
+      "aiohttp"
+    ],
+    "httpx": [
+      "httpx"
+    ],
+    "picqer": ["httpx"],
+    "xml": ["lxml"]
+  },
+  "classifiers": [
+     "Development Status :: 4 - Beta",
+     "Environment :: Console",
+     "Environment :: Web Environment",
+     "Intended Audience :: Developers",
+     "License :: Other/Proprietary License",
+     "Operating System :: POSIX",
+     "Operating System :: POSIX :: Linux",
+     "Programming Language :: Python :: 3.10",
+     "Programming Language :: Python :: 3 :: Only",
+     "Topic :: Internet",
+     "Topic :: Internet :: WWW/HTTP :: Session",
+     "Topic :: Security",
+     "Topic :: Security :: Cryptography",
+     "Topic :: Software Development :: Libraries"
+  ]
+}
